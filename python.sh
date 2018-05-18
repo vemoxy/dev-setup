@@ -32,7 +32,7 @@ EXTRA_PATH=~/.extra
 echo $EXTRA_PATH
 echo "" >> $EXTRA_PATH
 echo "" >> $EXTRA_PATH
-echo "# Source virtualenvwrapper, added by pydata.sh" >> $EXTRA_PATH
+echo "# Source virtualenvwrapper, added by python.sh" >> $EXTRA_PATH
 echo "export WORKON_HOME=~/.virtualenvs" >> $EXTRA_PATH
 echo "source /usr/local/bin/virtualenvwrapper.sh" >> $EXTRA_PATH
 echo "" >> $BASH_PROFILE_PATH
