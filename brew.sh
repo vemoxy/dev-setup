@@ -168,7 +168,11 @@ brew install docker
 brew install boot2docker
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+# Note: betterzipql got integrated into betterzip which is not free
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package
+
+# Personal installations
+brew cask install vemoxy/devsetup/steelseries-exactmouse-tool
 
 # Remove outdated versions from the cellar.
 brew cleanup

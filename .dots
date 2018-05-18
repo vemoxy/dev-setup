@@ -55,6 +55,14 @@ function runDots() {
             echo ""
             ./osx.sh
         fi
+        if [ $ARG == "python" ] || [ $ARG == "all" ]; then
+            # Run the python.sh Script
+            echo "------------------------------"
+            echo "Setting up Python development environment."
+            echo "------------------------------"
+            echo ""
+            ./python.sh
+        fi
         if [ $ARG == "pydata" ] || [ $ARG == "all" ]; then
             # Run the pydata.sh Script
             echo "------------------------------"
