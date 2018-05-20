@@ -1,3 +1,4 @@
+
 alias ll='ls -la'
 alias shortcuts='vim ~/.zshrc; . ~/.zshrc'
 alias hosts='sudo vim /etc/hosts'

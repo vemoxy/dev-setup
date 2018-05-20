@@ -143,6 +143,7 @@ brew cask install --appdir="~/Applications" iterm2
 #brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
+brew cask install --appdir="~/Applications" visual-studio-code
 #brew cask install --appdir="/Applications" sublime-text
 #brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" virtualbox
@@ -173,6 +174,7 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
 
 # Personal installations
 brew cask install vemoxy/devsetup/steelseries-exactmouse-tool
+brew cask install vemoxy/devsetup/imeshortcuts
 
 # Remove outdated versions from the cellar.
 brew cleanup
