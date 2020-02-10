@@ -8,7 +8,7 @@ https://github.com/donnemartin/dev-setup
 # What should I do?
 
 ```
-curl -O https://raw.githubusercontent.com/vemoxy/dev-setup/master/.dots && ./.dots [Add ARGS Here]
+curl -O https://raw.githubusercontent.com/vemoxy/dev-setup/master/.dots && ./.dots bootstrap osxprep brew python zsh
 ```
 
 # Todo

@@ -9,33 +9,3 @@ source /usr/local/bin/virtualenvwrapper.sh
 alias firewall_block='f() { (sudo pfctl -sr 2>/dev/null; echo "block drop quick on en0 proto tcp from any to $1 port = $2") | sudo pfctl -ef - 2>/dev/null }; f'
 alias firewall_reset='sudo pfctl -f /etc/pf.conf'
 alias firewall_list='sudo pfctl -sr 2>/dev/null'
-
-# Compass
-alias cc='compass compile $@'
-
-## I still like these
-alias gp='git pull'
-alias gpp='git pull --prune'
-alias gprm='git pull --rebase origin master'
-alias gprr='git pull --rebase origin release'
-alias gprrw='git pull --rebase origin release-webapi'
-alias gprrb='git pull --rebase origin release-backend'
-alias gpush='git push'
-alias grc='git rebase --continue'
-alias gmor='git merge origin/release'
-alias gmorb='git merge origin/release-backend'
-alias gmorw='git merge origin/release-webapi'
-alias gmomb='git merge origin/master-backend --no-ff'
-
-function __gccd () {
-        git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative $1..$2
-}
-alias gccd='__gccd'
-
-## Pallav's pretty logs
-alias gls='git log --stat --color --oneline --graph'
-alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-alias hlog='git log --date-order --all --graph --format="%C(green)%h %Creset%C(yellow)%an%Creset %C(blue bold)%ar%Creset %C(red bold)%d%Creset %s"'
-
-# Django
-alias dshell='python manage.py shell'
