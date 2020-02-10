@@ -31,10 +31,9 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 # Install Bash 4.
 brew install bash
-brew tap homebrew/versions
 brew install bash-completion2
 # We installed the new shell, now we have to activate it
 echo "Adding the newly installed shell to the list of allowed shells"
@@ -133,7 +132,7 @@ brew link libxml2 --force
 brew link libxslt --force
 
 # Install Heroku
-#brew install heroku-toolbelt
+#brew install heroku/brew/heroku
 #heroku update
 
 # Core casks
@@ -170,7 +169,7 @@ brew install boot2docker
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 # Note: betterzipql got integrated into betterzip which is not free
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package quicklookase qlvideo
 
 # Personal installations
 brew cask install vemoxy/devsetup/steelseries-exactmouse-tool
